@@ -1,5 +1,5 @@
 # Read through the documentation of the Ghibli API and reproduce the example
-# listed at https://ghibliapi.herokuapp.com/#section/Use-Case in Python.
+# listed at https://ghibliapi-iansedano.vercel.app/#section/Use-Case in Python.
 # Try skim the Haskell code example and see if you can understand anything.
 # Don't worry if you don't, it's a completely different language :)
 #
