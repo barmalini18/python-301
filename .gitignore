@@ -1,1 +1,6 @@
 secrets.py
+.vscode/
+*.pyc
+.venv/
+my_pdfs.csv
+my_files.csv
