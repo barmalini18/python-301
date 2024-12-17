@@ -10,3 +10,13 @@
 #
 # Model such an application form as a Python class below, and instantiate
 # a few objects from it.
+class Patient:
+    """this is a patient class"""
+    def __init__(self):
+        self.name = 'name'
+    
+p1 = Patient()
+
+
+print(p1.name)
+
