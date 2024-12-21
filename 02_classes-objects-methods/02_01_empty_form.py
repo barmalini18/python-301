@@ -12,11 +12,11 @@
 # a few objects from it.
 class Patient:
     """this is a patient class"""
-    def __init__(self):
-        self.name = 'name'
+    def __init__(self, name):
+        self.name = name
     
-p1 = Patient()
+p1 = Patient('Lucy')
+p2 = Patient('Mark')
 
 
-print(p1.name)
-
+print(p1.name, p2.name)
