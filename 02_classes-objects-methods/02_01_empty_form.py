@@ -20,3 +20,25 @@ p2 = Patient('Mark')
 
 
 print(p1.name, p2.name)
+
+class Ingredient:
+    """Models a food item used as an ingredient."""
+    def __init__(self, name):
+        self.name = name
+
+    def expire(self):
+        """Expires the ingredients."""
+        print(f"whoops, these {self.name} went bad...")
+        self.name = "expired " + self.name
+
+    def unexpire(self):
+        """Unexpires the ingredient. """    
+        print(f"Your product '{self.name}', is still fine")
+        self.name = self.name[8:]
+
+i = Ingredient('peas')
+print(i.name)
+i.expire()
+print(i.name)
+i.unexpire()
+print(i.name)
