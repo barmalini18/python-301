@@ -42,7 +42,8 @@ class Ingredient:
 
     def get_info(self):
         import webbrowser as wb
-        wb.open_new(self.url) 
+        url = 'https://en.wikipedia.org/wiki/' + self.name
+        wb.open_new(url) 
 
 
     def __str__(self):
@@ -52,6 +53,7 @@ class Ingredient:
         return f"Ingredient(name={self.name}, amount={self.amount})"
 
 i = Ingredient('peas')
+c = Ingredient('carrot')
 print(i)
 i.expire()
 print(i)
@@ -60,3 +62,4 @@ print(i)
 print(repr(i))
 print(str(i))
 print(i.get_info())
+print(c.get_info())
