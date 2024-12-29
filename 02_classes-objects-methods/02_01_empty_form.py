@@ -22,9 +22,13 @@ p2 = Patient('Mark')
 print(p1.name, p2.name)
 
 class Ingredient:
+
+
     """Models a food item used as an ingredient."""
     def __init__(self, name):
         self.name = name
+        self.amount = 1
+        self.url = 'https://en.wikipedia.org/wiki/Carrot'
 
     def expire(self):
         """Expires the ingredients."""
@@ -36,9 +40,23 @@ class Ingredient:
         print(f"Your product '{self.name}', is still fine")
         self.name = self.name[8:]
 
+    def get_info(self):
+        import webbrowser as wb
+        wb.open_new(self.url) 
+
+
+    def __str__(self):
+        return f"{self.name} ({self.amount})"
+    
+    def __repr__(self):
+        return f"Ingredient(name={self.name}, amount={self.amount})"
+
 i = Ingredient('peas')
-print(i.name)
+print(i)
 i.expire()
-print(i.name)
+print(i)
 i.unexpire()
-print(i.name)
+print(i)
+print(repr(i))
+print(str(i))
+print(i.get_info())
