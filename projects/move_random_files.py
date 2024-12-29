@@ -6,18 +6,14 @@ import os
 import sys
 import shutil as sh
 import random
-all_files = os.listdir()
-files = []
 
 # Make a list of jpegs
-for f in range(0, len(all_files)):
-    if (all_files[f][-4:] == '.jpg'):
-        files.append(all_files[f])
+files = []
+files += [f for f in os.listdir() if f.endswith('.jpg')]
 
 desired:int = 0
 if len(sys.argv) > 1:
     desired:int = int(sys.argv[1])
-
 
 # Check arguments
 if (0 <= desired >= len(files)):
