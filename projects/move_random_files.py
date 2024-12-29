@@ -20,7 +20,6 @@ files += [f for f in os.listdir() if f.endswith('.jpg')]
 
 # Check arguments
 if (desired >= len(files)):
-    # can't move more files than there is
     print("Can't move more files than there is, bye")
     sys.exit()
 
