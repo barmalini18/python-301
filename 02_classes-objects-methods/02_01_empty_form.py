@@ -54,6 +54,7 @@ class Ingredient:
 
 i = Ingredient('peas')
 c = Ingredient('carrot')
+p = Ingredient('potato')
 print(i)
 i.expire()
 print(i)
@@ -63,3 +64,4 @@ print(repr(i))
 print(str(i))
 print(i.get_info())
 print(c.get_info())
+print(p.get_info())
