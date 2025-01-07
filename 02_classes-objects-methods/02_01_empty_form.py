@@ -10,13 +10,22 @@
 #
 # Model such an application form as a Python class below, and instantiate
 # a few objects from it.
-class Patient:
-    """this is a patient class"""
-    def __init__(self):
-        self.name = 'name'
+class Ingredient:
+    """Models an Ingredient. Currently not only carrots!"""
+
+    def __init__(self, name):
+        self.name = name
+        self.expired = False
+
+    def expire(self):
+        self.expired = True
+
     
-p1 = Patient()
 
-
-print(p1.name)
-
+c = Ingredient('carrot')
+print(c.name)  # OUTPUT: carrot
+o = Ingredient('onion')
+print(o.name)
+print(o.name, 'expired: ', o.expired)
+o.expire()
+print(o.name, 'expired: ', o.expired)
