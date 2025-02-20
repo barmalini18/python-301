@@ -1,3 +1,4 @@
+#%%
 # A good way to think about how classes are blueprints of objects is to think of
 # an empty form, for example one that you would get at a doctor's office.
 # The empty form contains all the placeholders that define what information
@@ -65,3 +66,5 @@ print(str(i))
 print(i.get_info())
 print(c.get_info())
 print(p.get_info())
+
+# %%
