@@ -11,6 +11,27 @@
 #
 # Model such an application form as a Python class below, and instantiate
 # a few objects from it.
+
+class Ingredient:
+    """Models an Ingredient. Currently not only carrots!"""
+
+    def __init__(self, name):
+        self.name = name
+        self.expired = False
+
+    def expire(self):
+        self.expired = True
+
+    
+
+c = Ingredient('carrot')
+print(c.name)  # OUTPUT: carrot
+o = Ingredient('onion')
+print(o.name)
+print(o.name, 'expired: ', o.expired)
+o.expire()
+print(o.name, 'expired: ', o.expired)
+=======
 class Patient:
     """this is a patient class"""
     def __init__(self, name):
@@ -66,5 +87,8 @@ print(str(i))
 print(i.get_info())
 print(c.get_info())
 print(p.get_info())
+
+# %%
+>>>>>>> 53077b2bc8c2ed469cba143a7d18428674a1ff03
 
 # %%
